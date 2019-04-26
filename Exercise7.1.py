@@ -10,9 +10,9 @@
 #SAT, 05 JAN 2008 09:14:16 -0500
 #You can download the file from www.py4e.com/code3/mbox-short.txt
 #fname = input ("Please Enter file name:\n")
-fname = input ("Enter the file name:\n")
+fname = raw_input ("Enter the file name:\n")
 try:
-    fhand = open(fname)
+    fhand = open(fname,'r')
 except:
     print("File cannot be opened:", fname)
     exit()
